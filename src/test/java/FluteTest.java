@@ -19,4 +19,16 @@ public class FluteTest {
     public void play() {
         assertEquals("trill", flute.play("trill"));
     }
+
+
+    @Test
+    public void canGetPrice() {
+        assertEquals(1023.44, flute.getPrice(), 0.01);
+    }
+
+    @Test
+    public void canCalculateMarkup() {
+        flute.calculateMarkup(0.1);
+        assertEquals(1125.78, flute.getPrice(), 0.05);
+    }
 }

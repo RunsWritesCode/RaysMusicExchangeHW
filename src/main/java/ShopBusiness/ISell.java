@@ -1,7 +1,7 @@
-//package ShopBusiness;
-//
-//public interface ISell {
-//
-//public double sell(int )
-//
-//}
+package ShopBusiness;
+
+public interface ISell {
+
+void calculateMarkup(double price);
+
+}
