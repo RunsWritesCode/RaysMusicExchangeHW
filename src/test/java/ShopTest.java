@@ -3,6 +3,7 @@ import Instruments.Guitar;
 import Instruments.Piano;
 import Miscellaneous.Plectrum;
 import Miscellaneous.SheetMusic;
+import ShopBusiness.ISell;
 import ShopBusiness.Shop;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +36,8 @@ public class ShopTest {
     }
 
     @Test
-    public void addItemToStock() {
+    public void canAddItemToStock() {
+        shop.addItemToStock(flute);
         assertEquals(1, shop.stockCount());
     }
 }

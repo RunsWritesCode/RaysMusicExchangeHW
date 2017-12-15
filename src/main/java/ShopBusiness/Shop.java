@@ -1,5 +1,8 @@
 package ShopBusiness;
 
+import Instruments.Flute;
+import Instruments.Instrument;
+
 import java.util.ArrayList;
 
 public class Shop {
@@ -24,7 +27,9 @@ public class Shop {
         return this.stock.size();
     }
 
-
+    public void addItemToStock(ISell instrument) {
+        this.stock.add(instrument);
+    }
 
 
 
