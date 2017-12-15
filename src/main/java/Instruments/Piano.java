@@ -22,7 +22,7 @@ public class Piano extends Instrument implements IPlay {
 
     @Override
     public String play(String sound) {
-        return "plink plink";
+        return "dudadader";
     }
 
 }

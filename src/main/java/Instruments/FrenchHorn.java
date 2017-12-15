@@ -20,7 +20,7 @@ public class FrenchHorn extends Instrument implements IPlay {
 
     @Override
     public String play(String sound) {
-        return "papoom";
+        return "paruump";
     }
 
 }

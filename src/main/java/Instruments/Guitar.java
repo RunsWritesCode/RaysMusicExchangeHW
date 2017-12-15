@@ -21,6 +21,6 @@ public class Guitar extends Instrument implements IPlay {
 
     @Override
     public String play(String sound) {
-        return "chord";
+        return "thring";
     }
 }
