@@ -18,4 +18,9 @@ public class PianoTest {
         assertEquals("dudadader", piano.play("dudadader"));
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        piano.calculateMarkup(0.1);
+        assertEquals(20900.00, piano.getPrice(), 0.05);
+    }
 }

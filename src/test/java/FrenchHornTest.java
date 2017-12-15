@@ -19,5 +19,11 @@ public class FrenchHornTest {
         assertEquals("paruump", frenchHorn.play("paruump"));
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        frenchHorn.calculateMarkup(0.1);
+        assertEquals(4888.884, frenchHorn.getPrice(), 0.05);
+    }
+
 
 }

@@ -2,17 +2,13 @@ package Miscellaneous;
 
 import ShopBusiness.ISell;
 
-public class Plectrum implements ISell {
+public class Drumstick implements ISell {
 
     private String material;
-    private String logo;
-    private int numInPack;
     private double price;
 
-    public Plectrum(String material, String logo, int numInPack, double price) {
+    public Drumstick(String material, double price) {
         this.material = material;
-        this.logo = logo;
-        this.numInPack = numInPack;
         this.price = price;
     }
 
@@ -24,22 +20,6 @@ public class Plectrum implements ISell {
         this.material = material;
     }
 
-    public String getLogo() {
-        return logo;
-    }
-
-    public void setLogo(String logo) {
-        this.logo = logo;
-    }
-
-    public int getNumInPack() {
-        return numInPack;
-    }
-
-    public void setNumInPack(int numInPack) {
-        this.numInPack = numInPack;
-    }
-
     public double getPrice() {
         return price;
     }
@@ -48,9 +28,9 @@ public class Plectrum implements ISell {
         this.price = price;
     }
 
+
     @Override
     public void calculateMarkup(double markup) {
         this.price = this.price + (this.price * markup);
     }
-
 }

@@ -1,7 +1,7 @@
 package Instruments;
-//import ShopBusiness.ISell;
+import ShopBusiness.ISell;
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument implements IPlay, ISell {
 
     public int numberOfStrings;
 
@@ -23,4 +23,10 @@ public class Guitar extends Instrument implements IPlay {
     public String play(String sound) {
         return "thring";
     }
+
+    @Override
+    public void calculateMarkup(double markup) {
+        this.price = this.price + (this.price * markup);
+    }
+
 }
